@@ -1,0 +1,94 @@
+Assignment Details
+
+As the next step in the selection process, you are required to complete a technical assignment designed to assess your development, problem-solving, and optimization skills.
+
+Assignment Title:
+Designing and Implementation of a Microservice-based Application.
+
+Backend Description: Create 2 Nest.js services as Microservices with REST or gRPC API’s and communicate between each other.
+
+Requirements:
+
+1) Setup a Nest.js project with Microservices capabilities
+2) Create 2 Microservices One for product management and another for order management
+3) Decide the schema on own thought process to cover maximum scenarios
+4) Create Crud Operations in each service for product and order managements
+5) Communicate between 2 services and create the order
+
+Example:
+
+a. Create a product and create the order with the product created
+b. Create a GET API where we can see the created orders and products of orders
+Client Application Description: Create a responsive application using Next.js and Typescript that allows users to create and add their custom components.
+
+Requirements:
+
+1) Creating Components: Create a Signup form with 3 Fields:
+a. Full Name
+b. Email
+c. Gender
+
+2) Maintain Proper Validation for Form (you can use react Hook Forms)
+3) Fields should be dynamic based on JSON (attached with Assignment)
+4) Make sure components are dynamic based on JSON data, if we change "field Type" from TEXT" to "LIST" or "RADIO" it should render components as per "field Type" with all props i.e: label, default value etc.
+
+Example:
+
+a. Changing label name from "full name" to "name" and make field as mandatory/optional based on JSON.
+b. Change the datatype from list to radio button at the design level so that the list will change to radio button and vice versa.
+c. Styling and Responsiveness: Create a visually appealing and user-friendly interface using Material UI library.
+d. Data Persistence: Utilize local storage or a custom JSON to simulate data persistence for tasks and projects.
+
+**Submission Guidelines: **
+
+Fork this assignment repository on GitHub/GitLab (or use your own public repository).
+Include a README.md with steps to run the application locally. Share the repository link with us upon completion. Expected completion time: 4–5 hours.
+You may use AI tools to assist, but ensure final deliverables are your own, professional, and optimized.
+
+Focus on: Optimized, clean, and modular code. Scalability and maintainability. User experience and performance.
+
+JSON Data 
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Full Name",
+      "fieldType": "TEXT",
+      "minLength": 1,
+      "maxLength": 100,
+      "defaultValue": "John Doe",
+      "required": true
+    },
+    {
+      "id": 2,
+      "name": "Email",
+      "fieldType": "TEXT",
+      "minLength": 1,
+      "maxLength": 50, "defaultValue": "hello@mail.com",
+      "required": true
+    },
+    {
+      "id": 6,
+      "name": "Gender",
+      "fieldType": "LIST",
+      "defaultValue": "1",
+      "required": true,
+      "listOfValues1": [
+        "Male",
+        "Female",
+        "Others"
+    ]
+    },
+    {
+      "id": 7,
+      "name": "Love React?",
+      "fieldType": "RADIO",
+      "defaultValue": "1",
+      "required": true,
+      "listOfValues1": [
+        "Yes",
+        "No"
+    ]
+    }
+  ]
+}
